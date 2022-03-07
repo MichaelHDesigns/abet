@@ -2049,7 +2049,7 @@ int64_t GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZPIVStake)
 {
-    if (nHeight > 55)
+    if (nHeight > 100)
         return blockValue * 0.50;
     return 0;
 }
