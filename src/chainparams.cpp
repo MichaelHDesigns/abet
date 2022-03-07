@@ -119,10 +119,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x2b; // A
-        pchMessageStart[1] = 0x4b; // B
-        pchMessageStart[2] = 0x3r; // E
-        pchMessageStart[3] = 0x83; // T-8
+        pchMessageStart[0] = 0x2b;
+        pchMessageStart[1] = 0x4b;
+        pchMessageStart[2] = 0xee;
+        pchMessageStart[3] = 0x83;
         vAlertPubKey = ParseHex("0435401a5693de702378a538ad939ea03b5e3b2826f68431ba840df5f418e3f3e8590ba4fb0c36097179bb55ffc4a4e065dc2ff87edb6f3ce4232a71d253ed7fff");
         nDefaultPort = 8322;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
