@@ -213,7 +213,7 @@ public:
         nBudgetCycleBlocks = 43200;
         strSporkKey = "032b46812dedb731d515b4fe28efd6591adcae691f03fb1577f1a6fb1c89f67ba2";
         strSporkKeyOld = "";
-        strObfuscationPoolDummyAddress = "Ab5bNTKMKVJWLTDCwwEEvHH9MzDhxRaL5a";
+        strObfuscationPoolDummyAddress = "BEpiCinsph7Dq7iHSoVPmmVaMHC98jbmmG";
         nStartMasternodePayments = genesis.nTime;
 
         /** Zerocoin */
