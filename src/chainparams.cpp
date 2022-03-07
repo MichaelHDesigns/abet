@@ -133,7 +133,7 @@ public:
         nToCheckBlockUpgradeMajority = 9255; // Approximate expected amount of blocks in 7 days (1440*7.5)
         nMinerThreads = 0;
         nTargetSpacing = 120;
-        nMaturity = 60;
+        nMaturity = 6;
         nStakeMinDepth = nMaturity; // input must be n confirms deep to stake
         nFutureTimeDriftPoW = 7200;
         nFutureTimeDriftPoS = 180;
