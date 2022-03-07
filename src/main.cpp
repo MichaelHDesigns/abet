@@ -2026,15 +2026,15 @@ int64_t GetBlockValue(int nHeight)
 	*/
     int64_t nSubsidy = 0;
     nHeight--;
-	if (nHeight == 0){ nSubsidy = 2000000 * COIN;
-    } else if (nHeight > 1 && nHeight <= 7200)        { nSubsidy = .25 * COIN;
-    } else if (nHeight > 7200 && nHeight <= 72000)    { nSubsidy = 2.6 * COIN;
-    } else if (nHeight > 72000 && nHeight <= 136800)  { nSubsidy = 2.5 * COIN;
-    } else if (nHeight > 136800 && nHeight <= 266400) { nSubsidy = 2.4 * COIN;
-    } else if (nHeight > 266400 && nHeight <= 396000) { nSubsidy = 2.3 * COIN;
-    } else if (nHeight > 396000 && nHeight <= 655200) { nSubsidy = 2.2 * COIN;
-    } else if (nHeight > 655200 && nHeight <= 914400) { nSubsidy = 2.1 * COIN;
-    } else if (nHeight > 914400)                      { nSubsidy = 2 * COIN; }
+	if (nHeight == 0){ nSubsidy = 20000000 * COIN;
+    } else if (nHeight > 1 && nHeight <= 100)        { nSubsidy = 5000 * COIN;
+    } else if (nHeight > 100 && nHeight <= 72000)    { nSubsidy = 2000 * COIN;
+    } else if (nHeight > 72000 && nHeight <= 136800)  { nSubsidy = 2000 * COIN;
+    } else if (nHeight > 136800 && nHeight <= 266400) { nSubsidy = 2000 * COIN;
+    } else if (nHeight > 266400 && nHeight <= 396000) { nSubsidy = 2000 * COIN;
+    } else if (nHeight > 396000 && nHeight <= 655200) { nSubsidy = 2000 * COIN;
+    } else if (nHeight > 655200 && nHeight <= 914400) { nSubsidy = 2000 * COIN;
+    } else if (nHeight > 914400)                      { nSubsidy = 2000 * COIN; }
 
 	// Check if we reached the coin max supply.
     int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
@@ -2049,8 +2049,8 @@ int64_t GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount, bool isZPIVStake)
 {
-    if (nHeight > 500)
-        return blockValue * 0.90;
+    if (nHeight > 100)
+        return blockValue * 0.50;
     return 0;
 }
 
